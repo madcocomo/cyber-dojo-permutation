@@ -1,41 +1,6 @@
-Reorder.java:9: error: no suitable method found for add(Integer)
-            result.add(list.get(0));
-                  ^
-    method Collection.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method List.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method AbstractCollection.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method AbstractList.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method ArrayList.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-Reorder.java:12: error: no suitable method found for add(Integer)
-            result.add(list.get(0));
-                  ^
-    method Collection.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method List.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method AbstractCollection.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method AbstractList.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method ArrayList.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-Reorder.java:13: error: no suitable method found for add(Integer)
-            result.add(list.get(1));
-                  ^
-    method Collection.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method List.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method AbstractCollection.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method AbstractList.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-    method ArrayList.add(List<Integer>) is not applicable
-      (argument mismatch; Integer cannot be converted to List<Integer>)
-Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-3 errors
+JUnit version 4.11-SNAPSHOT-20120416-1530
+.....
+Time: 0.045
+
+OK (5 tests)
+
