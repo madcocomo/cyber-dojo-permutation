@@ -13,12 +13,20 @@ public class Reorder {
             }
         }
         if (list.size() == 2) {
+            ArrayList<List<Integer>> result1 = 
+                new ArrayList<List<Integer>>();
             {
-                List<Integer>newList = new ArrayList<Integer>();
-                newList.add(list.get(0));
+                List<Integer> newList = new ArrayList<Integer>();
                 newList.add(list.get(1));
+                result1.add(newList);
+            }
+            
+            {
+                List<Integer> newList = newArrayList<Integer>(result1.get(0));
+                newList.add(list.get(0),0);
                 result.add(newList);
             }
+
             if (!list.get(0).equals(list.get(1))) {
                 List<Integer> newList = new ArrayList<Integer>();
                 newList.add(list.get(1));
