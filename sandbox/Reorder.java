@@ -12,7 +12,7 @@ public class Reorder {
         return result;
     }
     
-    public List<Integer> exchange(List<Integer> list) {
+    public static List<Integer> exchange(List<Integer> list) {
         List<Integer> newList = new ArrayList<Integer>();
         newList.add(list.get(1));
         newList.add(list.get(0));
