@@ -22,7 +22,7 @@ public class Reorder {
             }
             
             {
-                List<Integer> newList = newArrayList<Integer>(result1.get(0));
+                List<Integer> newList = new ArrayList<Integer>(result1.get(0));
                 newList.add(list.get(0),0);
                 result.add(newList);
             }
