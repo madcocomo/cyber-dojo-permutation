@@ -27,9 +27,17 @@ public class ReorderTest {
     }
     
     @Test
-    public void testOrders_11() {
-        List actual = Reorder.orders(Arrays.asList(1,1));
-        List<List> expect = Arrays.asList(Arrays.asList(1,1));
+    public void testOrders_22() {
+        List actual = Reorder.orders(Arrays.asList(2,2));
+        List<List> expect = Arrays.asList(Arrays.asList(2,2));
+        assertEquals(expect, actual);        
+    }
+
+    @Test
+    public void testOrders_122() {
+        List actual = Reorder.orders(Arrays.asList(1,2,2));
+        List<List> expect = Arrays.asList(Arrays.asList(1,2,2),
+          Arrays.asList(2,1,2),Arrays.asList(2,2,1));
         assertEquals(expect, actual);        
     }
 
