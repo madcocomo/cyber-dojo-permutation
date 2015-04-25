@@ -34,9 +34,20 @@ public class Reorder {
                 newList.add(list.get(2));
                 result.add(newList);
             }
-            List<Integer> newList = new ArrayList<Integer>();
-            result.add(Arrays.asList(2,1,2));
-            result.add(Arrays.asList(2,2,1));
+            {
+                List<Integer>newList = new ArrayList<Integer>();
+                newList.add(list.get(1));
+                newList.add(list.get(0));
+                newList.add(list.get(2));
+                result.add(newList);
+            }
+            {
+                List<Integer>newList = new ArrayList<Integer>();
+                newList.add(list.get(1));
+                newList.add(list.get(2));
+                newList.add(list.get(0));
+                result.add(newList);
+            }
         }
         return result;
     }
