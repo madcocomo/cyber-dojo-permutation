@@ -1,6 +1,9 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-...
-Time: 0.028
-
-OK (3 tests)
-
+Reorder.java:10: error: non-static method exchange(List<Integer>) cannot be referenced from a static context
+            exchange(list);
+            ^
+Reorder.java:11: error: cannot find symbol
+            result.add(newList);
+                       ^
+  symbol:   variable newList
+  location: class Reorder
+2 errors

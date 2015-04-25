@@ -7,11 +7,15 @@ public class Reorder {
             new ArrayList<List<Integer>>();
         result.add(list);
         if (list.size() == 2) {
-            List<Integer> newList = new ArrayList<Integer>();
-            newList.add(list.get(1));
-            newList.add(list.get(0));
+            exchange(list);
             result.add(newList);
         }
         return result;
+    }
+    
+    public List<Integer> exchange(List<Integer> list) {
+        List<Integer> newList = new ArrayList<Integer>();
+        newList.add(list.get(1));
+        newList.add(list.get(0));
     }
 }
