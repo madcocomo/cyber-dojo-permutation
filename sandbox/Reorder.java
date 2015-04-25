@@ -17,7 +17,7 @@ public class Reorder {
         if (list.size() == 3) {
         List<Integer> newList = new ArrayList<Integer>();
             result.add(Arrays.asList(2,1,2));
-            result.add(Arrays.asList(2,2,2));
+            result.add(Arrays.asList(2,2,1));
         }
         return result;
     }
