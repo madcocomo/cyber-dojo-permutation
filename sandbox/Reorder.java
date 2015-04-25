@@ -14,8 +14,10 @@ public class Reorder {
     
     public static List<Integer> exchange(List<Integer> list) {
         List<Integer> newList = new ArrayList<Integer>();
-        newList.add(list.get(1));
-        newList.add(list.get(0));
+        if (!list.get(0).equals(list.get(1)) {
+            newList.add(list.get(1));
+            newList.add(list.get(0));
+        }
         return newList;
     }
 }
