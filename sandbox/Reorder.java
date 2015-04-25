@@ -7,7 +7,10 @@ public class Reorder {
             new ArrayList<List<Integer>>();
         result.add(list);
         if (list.size() == 2) {
-            result.add(exchange(list));
+            List<Integer> newList = exchange(list);
+            if (!newList.empty()) {
+                result.add(newList);
+            }
         }
         return result;
     }
