@@ -6,10 +6,11 @@ public class Reorder {
         ArrayList<List<Integer>> result = 
             new ArrayList<List<Integer>>();
         if (list.size() == 1) {
-            result.add(list);
+            result.add(list.get(0));
         }
         if (list.size() == 2) {
-            result.add(list);
+            result.add(list.get(0));
+            result.add(list.get(1));
             if (!list.get(0).equals(list.get(1))) {
                 List<Integer> newList = new ArrayList<Integer>();
                 newList.add(list.get(1));
