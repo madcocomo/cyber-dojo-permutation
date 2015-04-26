@@ -8,7 +8,7 @@ public class Reorder {
         if (list.size() == 1 || list.size() == 2) {
             {
                 List<Integer>newList = new ArrayList<Integer>();
-                newList.add(list.get(0));
+                newList.add(list.get(list.size()-1));
                 result.add(newList);
             }
         }
