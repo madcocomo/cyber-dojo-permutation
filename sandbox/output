@@ -1,6 +1,4 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-....
-Time: 0.037
-
-OK (4 tests)
-
+Reorder.java:50: error: variable i is already defined in method mixInto(int,List<Integer>)
+int i = 0;
+    ^
+1 error
