@@ -37,23 +37,7 @@ public class Reorder {
             result.add(Arrays.asList(2,2));
             int toMix = list.get(list.size()-3);
 
-            ArrayList<List<Integer>> result1 = 
-                new ArrayList<List<Integer>>();
-            {
-                List<Integer>newList = new ArrayList<Integer>(result.get(0));
-                newList.add(0,toMix);
-                result1.add(newList);
-            }
-            {
-                List<Integer>newList = new ArrayList<Integer>(result.get(0));
-                newList.add(1,toMix);
-                result1.add(newList);
-            }
-            {
-                List<Integer>newList = new ArrayList<Integer>(result.get(0));
-                newList.add(2,toMix);
-                result1.add(newList);
-            }
+            ArrayList<List<Integer>> result1 = mixInto(toMix, result.get(0));
             result = result1;
         }
         return result;
