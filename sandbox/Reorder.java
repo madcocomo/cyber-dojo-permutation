@@ -5,7 +5,7 @@ public class Reorder {
     public static List<List<Integer>> orders(List<Integer> list) {
         ArrayList<List<Integer>> result = 
             new ArrayList<List<Integer>>();
-        if (list.size() == 1) {
+        if (list.size() == 1 || list.size() == 2) {
             {
                 List<Integer>newList = new ArrayList<Integer>();
                 newList.add(list.get(0));
@@ -13,6 +13,7 @@ public class Reorder {
             }
         }
         if (list.size() == 2) {
+/*
             ArrayList<List<Integer>> result1 = 
                 new ArrayList<List<Integer>>();
             {
@@ -20,7 +21,7 @@ public class Reorder {
                 newList.add(list.get(1));
                 result1.add(newList);
             }
-            
+*/            
             {
                 List<Integer> newList = new ArrayList<Integer>(result1.get(0));
                 newList.add(0,list.get(0));
