@@ -6,10 +6,9 @@ public class Reorder {
         List<List<Integer>> result = 
             new ArrayList<List<Integer>>();
         result.add(new ArrayList<Integer>());
-        if (list.size() >= 1) {
+        if (true||list.size() >= 1) {
             for (int i=1; i<=list.size(); i++) {
                 int toMix = list.get(list.size()-i);
-                //ArrayList<List<Integer>> temp = new ArrayList<List<Integer>>();
                 Set<List<Integer>> temp = new LinkedHashSet<List<Integer>>();
                 for (List<Integer> partList : result)
                     temp.addAll(mixInto(toMix, partList));
