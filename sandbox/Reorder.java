@@ -6,15 +6,13 @@ public class Reorder {
         List<List<Integer>> result = 
             new ArrayList<List<Integer>>();
         result.add(new ArrayList<Integer>());
-        if (true||list.size() >= 1) {
-            for (int i=1; i<=list.size(); i++) {
-                int toMix = list.get(list.size()-i);
-                Set<List<Integer>> temp = new LinkedHashSet<List<Integer>>();
-                for (List<Integer> partList : result)
-                    temp.addAll(mixInto(toMix, partList));
-                result.clear();
-                result.addAll(temp);
-            }
+        for (int i=1; i<=list.size(); i++) {
+            int toMix = list.get(list.size()-i);
+            Set<List<Integer>> temp = new LinkedHashSet<List<Integer>>();
+            for (List<Integer> partList : result)
+                temp.addAll(mixInto(toMix, partList));
+            result.clear();
+            result.addAll(temp);
         }
         return result;
     }
