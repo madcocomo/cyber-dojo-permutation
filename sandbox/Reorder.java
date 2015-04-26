@@ -12,6 +12,7 @@ public class Reorder {
                 result = mixInto(toMix, result.get(0));
             }
         }
+/*
         if (list.size() == 3) {
             result.clear();
             result.add(Arrays.asList(2,2));
@@ -19,6 +20,7 @@ public class Reorder {
             int toMix = list.get(list.size()-3);
             result = mixInto(toMix, result.get(0));
         }
+*/
         return result;
     }
 
@@ -29,7 +31,7 @@ public class Reorder {
             List<Integer>newList = new ArrayList<Integer>(list);
             newList.add(i,toMix);
             if (!result.contains(newList)) {
-            result.add(newList);
+                result.add(newList);
             }
         }
         return result;        
