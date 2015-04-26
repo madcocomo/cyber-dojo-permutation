@@ -1,6 +1,58 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-....
-Time: 0.037
-
-OK (4 tests)
-
+Reorder.java:10: error: ';' expected
+            for (int i=1; i<list.size() {
+                                       ^
+Reorder.java:10: error: illegal start of expression
+            for (int i=1; i<list.size() {
+                                        ^
+Reorder.java:10: error: ')' expected
+            for (int i=1; i<list.size() {
+                                         ^
+Reorder.java:21: error: illegal start of type
+        if (list.size() == 3) {
+        ^
+Reorder.java:21: error: <identifier> expected
+        if (list.size() == 3) {
+                     ^
+Reorder.java:21: error: ';' expected
+        if (list.size() == 3) {
+                      ^
+Reorder.java:21: error: illegal start of type
+        if (list.size() == 3) {
+                        ^
+Reorder.java:21: error: <identifier> expected
+        if (list.size() == 3) {
+                          ^
+Reorder.java:21: error: ';' expected
+        if (list.size() == 3) {
+                            ^
+Reorder.java:28: error: illegal start of type
+        return result;
+        ^
+Reorder.java:28: error: ';' expected
+        return result;
+              ^
+Reorder.java:31: error: class, interface, or enum expected
+    public static List<List<Integer>> mixInto(int toMix, List<Integer> list) {
+                  ^
+Reorder.java:33: error: class, interface, or enum expected
+        for(int i=0; i<=list.size(); i++)
+        ^
+Reorder.java:33: error: class, interface, or enum expected
+        for(int i=0; i<=list.size(); i++)
+                     ^
+Reorder.java:33: error: class, interface, or enum expected
+        for(int i=0; i<=list.size(); i++)
+                                     ^
+Reorder.java:36: error: class, interface, or enum expected
+            newList.add(i,toMix);
+            ^
+Reorder.java:37: error: class, interface, or enum expected
+            result.add(newList);
+            ^
+Reorder.java:38: error: class, interface, or enum expected
+        }
+        ^
+Reorder.java:40: error: class, interface, or enum expected
+    }
+    ^
+19 errors
