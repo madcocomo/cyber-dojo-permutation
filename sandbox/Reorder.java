@@ -18,27 +18,13 @@ public class Reorder {
         if (list.size() == 2) {
             int toMix = list.get(list.size()-2);
 
-            ArrayList<List<Integer>> result1 = 
-                new ArrayList<List<Integer>>();
-            {
-                List<Integer> newList = new ArrayList<Integer>(result.get(0));
-                newList.add(0,toMix);
-                result1.add(newList);
-            }
-
-            {
-                List<Integer> newList = new ArrayList<Integer>(result.get(0));
-                newList.add(1,toMix);
-                result1.add(newList);
-            }
-            result = result1;
+            result = mixInto(toMix, result.get(0));
         }
         if (list.size() == 3) {
             result.add(Arrays.asList(2,2));
             int toMix = list.get(list.size()-3);
 
-            List<List<Integer>> result1 = mixInto(toMix, result.get(0));
-            result = result1;
+            result = mixInto(toMix, result.get(0));
         }
         return result;
     }
