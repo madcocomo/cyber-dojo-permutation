@@ -45,7 +45,7 @@ public class ReorderTest {
     public void testOrders_123() {
         List actual = Reorder.orders(Arrays.asList(1,2,3));
         List<List> expect = Arrays.asList(
-          Arrays.asList(1,2,3),Arrays.asList(2,1,3),Arrays.asList(2,3,1));
+          Arrays.asList(1,2,3),Arrays.asList(2,1,3),Arrays.asList(2,3,1),
           Arrays.asList(1,3,2),Arrays.asList(3,1,2),Arrays.asList(3,2,1));
         assertEquals(expect, actual);        
     }
