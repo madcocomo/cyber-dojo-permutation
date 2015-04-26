@@ -15,13 +15,6 @@ public class Reorder {
         if (list.size() == 2) {
             ArrayList<List<Integer>> result1 = 
                 new ArrayList<List<Integer>>();
-/*
-            {
-                List<Integer> newList = new ArrayList<Integer>();
-                newList.add(list.get(1));
-                result1.add(newList);
-            }
-*/            
             {
                 List<Integer> newList = new ArrayList<Integer>(result.get(0));
                 newList.add(0,list.get(0));
@@ -36,27 +29,25 @@ public class Reorder {
             result = result1;
         }
         if (list.size() == 3) {
+            ArrayList<List<Integer>> result2 = 
+                new ArrayList<List<Integer>>();
+            result.add(Arrays.asList(2,2);
             {
-                List<Integer>newList = new ArrayList<Integer>();
-                newList.add(list.get(0));
-                newList.add(list.get(1));
-                newList.add(list.get(2));
-                result.add(newList);
+                List<Integer>newList = new ArrayList<Integer>(result.get(0));
+                newList.add(0,list.get(0));
+                result2.add(newList);
             }
             {
-                List<Integer>newList = new ArrayList<Integer>();
-                newList.add(list.get(1));
-                newList.add(list.get(0));
-                newList.add(list.get(2));
-                result.add(newList);
+                List<Integer>newList = new ArrayList<Integer>(result.get(0));
+                newList.add(1,list.get(0));
+                result2.add(newList);
             }
             {
-                List<Integer>newList = new ArrayList<Integer>();
-                newList.add(list.get(1));
-                newList.add(list.get(2));
+                List<Integer>newList = new ArrayList<Integer>(result.get(0));
                 newList.add(list.get(0));
-                result.add(newList);
+                result2.add(newList);
             }
+            result = result2;
         }
         return result;
     }
