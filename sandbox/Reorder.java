@@ -9,7 +9,8 @@ public class Reorder {
         if (list.size() >= 1) {
             for (int i=1; i<=list.size(); i++) {
                 int toMix = list.get(list.size()-i);
-                result = mixInto(toMix, result.get(0));
+                for (List<Integer> partList : result)
+                    result = mixInto(toMix, partList);
             }
         }
         return result;
