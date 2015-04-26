@@ -9,22 +9,24 @@ public class Reorder {
         if (list.size() == 1 || list.size() == 2) {
             int toMix = list.get(list.size()-1);
 
+            List<List<Integer>> result1 = new ArrayList<List<Integer>>();
             {
                 List<Integer>newList = new ArrayList<Integer>();
                 newList.add(0,toMix);
-                result.add(newList);
+                result1.add(newList);
             }
+            result = result1;
         }
 
         if (list.size() == 2) {
             int toMix = list.get(list.size()-2);
-
             result = mixInto(toMix, result.get(0));
         }
         if (list.size() == 3) {
+            result.clear();
             result.add(Arrays.asList(2,2));
-            int toMix = list.get(list.size()-3);
 
+            int toMix = list.get(list.size()-3);
             result = mixInto(toMix, result.get(0));
         }
         return result;
