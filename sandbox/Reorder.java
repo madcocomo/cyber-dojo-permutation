@@ -46,18 +46,21 @@ public class Reorder {
     public static List<List<Integer>> mixInto(int toMix, List<Integer> list) {
         ArrayList<List<Integer>> result1 = new ArrayList<List<Integer>>();
         {
+int i = 0;
             List<Integer>newList = new ArrayList<Integer>(list);
-            newList.add(0,toMix);
+            newList.add(i,toMix);
             result1.add(newList);
         }
         {
+int i = 1;
             List<Integer>newList = new ArrayList<Integer>(list);
-            newList.add(1,toMix);
+            newList.add(i,toMix);
             result1.add(newList);
         }
         {
+int i = 2;
             List<Integer>newList = new ArrayList<Integer>(list);
-            newList.add(2,toMix);
+            newList.add(i,toMix);
             result1.add(newList);
         }
         return result1;        
