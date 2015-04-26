@@ -27,7 +27,7 @@ public class Reorder {
                 result.add(newList);
             }
 
-            if (!list.get(0).equals(list.get(1))) {
+            {
                 List<Integer> newList = new ArrayList<Integer>(result1.get(0));
                 newList.add(list.get(0));
                 result.add(newList);
