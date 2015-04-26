@@ -7,7 +7,7 @@ public class Reorder {
             new ArrayList<List<Integer>>();
         result.add(new ArrayList<Integer>());
         if (list.size() >= 1) {
-            for (int i=1; i<list.size() {
+            for (int i=1; i<list.size(); i++) {
             int toMix = list.get(list.size()-i);
             result = mixInto(toMix, result.get(0));
             }
