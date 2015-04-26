@@ -1,6 +1,6 @@
-Reorder.java:12: error: cannot find symbol
-                ArrayList<List<Integer>> temp = new ArrayList<list<Integer>>();
-                                                              ^
-  symbol:   class list
-  location: class Reorder
-1 error
+JUnit version 4.11-SNAPSHOT-20120416-1530
+......
+Time: 0.033
+
+OK (6 tests)
+
