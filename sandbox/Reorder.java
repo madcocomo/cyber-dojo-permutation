@@ -59,7 +59,7 @@ public class Reorder {
         return result;
     }
 
-    public static mixInto(int toMix, List<Integer> list) {
+    public static List<List<Integer>> mixInto(int toMix, List<Integer> list) {
         ArrayList<List<Integer>> result1 = new ArrayList<List<Integer>>();
         {
             List<Integer>newList = new ArrayList<Integer>(list);

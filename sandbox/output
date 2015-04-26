@@ -1,4 +1,6 @@
-Reorder.java:62: error: invalid method declaration; return type required
-    public static mixInto(int toMix, List<Integer> list) {
-                  ^
-1 error
+JUnit version 4.11-SNAPSHOT-20120416-1530
+....
+Time: 0.044
+
+OK (4 tests)
+
