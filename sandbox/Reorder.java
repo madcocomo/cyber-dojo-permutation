@@ -6,21 +6,12 @@ public class Reorder {
         List<List<Integer>> result = 
             new ArrayList<List<Integer>>();
         result.add(new ArrayList<Integer>());
-        if (list.size() == 1 || list.size() == 2) {
+        if (list.size() >= 1) {
             int toMix = list.get(list.size()-1);
             result = mixInto(toMix, result.get(0));
-/*
-            List<List<Integer>> result1 = new ArrayList<List<Integer>>();
-            {
-                List<Integer>newList = new ArrayList<Integer>(result.get(0));
-                newList.add(0,toMix);
-                result1.add(newList);
-            }
-            result = result1;
-*/
         }
 
-        if (list.size() == 2) {
+        if (list.size() >= 2) {
             int toMix = list.get(list.size()-2);
             result = mixInto(toMix, result.get(0));
         }
