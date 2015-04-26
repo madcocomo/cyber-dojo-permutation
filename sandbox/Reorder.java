@@ -3,18 +3,23 @@ import java.util.*;
 public class Reorder {
 
     public static List<List<Integer>> orders(List<Integer> list) {
-        List<List<Integer>> result = 
+        List<List<Integer>> result1 = 
             new ArrayList<List<Integer>>();
+
+        Set<List<Integer>> result = new LinkedHashSet<List<Integer>>();
         result.add(new ArrayList<Integer>());
         for (int i=1; i<=list.size(); i++) {
             int toMix = list.get(list.size()-i);
             Set<List<Integer>> temp = new LinkedHashSet<List<Integer>>();
             for (List<Integer> partList : result)
                 temp.addAll(mixInto(toMix, partList));
-            result.clear();
-            result.addAll(temp);
+            //result.clear();
+            //result.addAll(temp);
+            result = temp;
         }
-        return result;
+        result1.clear();
+        result1.addAll(result);
+        return result1;
     }
 
     public static List<List<Integer>> mixInto(int toMix, List<Integer> list) {
