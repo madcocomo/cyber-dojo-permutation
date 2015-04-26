@@ -5,6 +5,7 @@ public class Reorder {
     public static List<List<Integer>> orders(List<Integer> list) {
         List<List<Integer>> result = 
             new ArrayList<List<Integer>>();
+        result.add(new ArrayList<Integer>());
         if (list.size() == 1 || list.size() == 2) {
             int toMix = list.get(list.size()-1);
 
