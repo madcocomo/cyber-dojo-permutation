@@ -31,7 +31,7 @@ public class Reorder {
         if (list.size() == 3) {
             ArrayList<List<Integer>> result2 = 
                 new ArrayList<List<Integer>>();
-            result.add(Arrays.asList(2,2);
+            result.add(Arrays.asList(2,2));
             {
                 List<Integer>newList = new ArrayList<Integer>(result.get(0));
                 newList.add(0,list.get(0));
