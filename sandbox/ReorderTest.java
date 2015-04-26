@@ -59,7 +59,7 @@ public class ReorderTest {
     }
 
     @Test
-    Public void testOrders_big() {
+    public void testOrders_big() {
         List actual = Reorder.orders(Arrays.asList(1,2,3,4,5,6,7,8,9));
         assertEquals(362880, actual.size());
     }
