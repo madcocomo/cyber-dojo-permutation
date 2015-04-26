@@ -6,9 +6,10 @@ public class Reorder {
         ArrayList<List<Integer>> result = 
             new ArrayList<List<Integer>>();
         if (list.size() == 1 || list.size() == 2) {
+            int toMix = list.get(list.size()-1);
             {
                 List<Integer>newList = new ArrayList<Integer>();
-                newList.add(list.get(list.size()-1));
+                newList.add(toMix);
                 result.add(newList);
             }
         }
