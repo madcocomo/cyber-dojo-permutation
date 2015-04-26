@@ -1,6 +1,4 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-........
-Time: 2.046
-
-OK (8 tests)
-
+Unable to complete the tests in 15 seconds.
+Is there an accidental infinite loop?
+Is the server very busy?
+Please try again.
