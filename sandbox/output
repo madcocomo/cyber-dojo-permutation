@@ -1,4 +1,4 @@
-Reorder.java:40: error: incompatible types: List<List<Integer>> cannot be converted to ArrayList<List<Integer>>
-            ArrayList<List<Integer>> result1 = mixInto(toMix, result.get(0));
-                                                      ^
+Reorder.java:41: error: incompatible types: List<List<Integer>> cannot be converted to ArrayList<List<Integer>>
+            result = result1;
+                     ^
 1 error
