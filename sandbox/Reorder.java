@@ -8,16 +8,10 @@ public class Reorder {
         result.add(new ArrayList<Integer>());
         if (list.size() >= 1) {
             for (int i=1; i<=list.size(); i++) {
-            int toMix = list.get(list.size()-i);
-            result = mixInto(toMix, result.get(0));
+                int toMix = list.get(list.size()-i);
+                result = mixInto(toMix, result.get(0));
             }
         }
-/*
-        if (list.size() >= 2) {
-            int toMix = list.get(list.size()-2);
-            result = mixInto(toMix, result.get(0));
-        }
-*/
         if (list.size() == 3) {
             result.clear();
             result.add(Arrays.asList(2,2));
