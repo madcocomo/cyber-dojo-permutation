@@ -47,7 +47,6 @@ public class Reorder {
         ArrayList<List<Integer>> result1 = new ArrayList<List<Integer>>();
         for(int i=0; i<=list.size(); i++)
         {
-int i = 0;
             List<Integer>newList = new ArrayList<Integer>(list);
             newList.add(i,toMix);
             result1.add(newList);
