@@ -11,7 +11,7 @@ public class Reorder {
 
             List<List<Integer>> result1 = new ArrayList<List<Integer>>();
             {
-                List<Integer>newList = new ArrayList<Integer>();
+                List<Integer>newList = new ArrayList<Integer>(result.get(0));
                 newList.add(0,toMix);
                 result1.add(newList);
             }
