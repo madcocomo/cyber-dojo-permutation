@@ -12,15 +12,6 @@ public class Reorder {
                 result = mixInto(toMix, result.get(0));
             }
         }
-/*
-        if (list.size() == 3) {
-            result.clear();
-            result.add(Arrays.asList(2,2));
-
-            int toMix = list.get(list.size()-3);
-            result = mixInto(toMix, result.get(0));
-        }
-*/
         return result;
     }
 
