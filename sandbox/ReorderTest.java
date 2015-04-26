@@ -50,6 +50,14 @@ public class ReorderTest {
         assertEquals(expect, actual);        
     }
 
+    @Test
+    public void testOrders_212() {
+        List actual = Reorder.orders(Arrays.asList(2,1,2));
+        List<List> expect = Arrays.asList(Arrays.asList(2,1,2),
+          Arrays.asList(1,2,2),Arrays.asList(2,2,1));
+        assertEquals(expect, actual);        
+    }
+
 
 
 
