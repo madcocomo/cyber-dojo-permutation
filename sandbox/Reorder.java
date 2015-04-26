@@ -9,8 +9,10 @@ public class Reorder {
         if (list.size() >= 1) {
             for (int i=1; i<=list.size(); i++) {
                 int toMix = list.get(list.size()-i);
+                ArrayList<List<Integer>> temp = new ArrayList<list<Integer>>();
                 for (List<Integer> partList : result)
-                    result = mixInto(toMix, partList);
+                    temp.addAll(mixInto(toMix, partList));
+                result = temp;
             }
         }
         return result;
