@@ -3,7 +3,7 @@ import java.util.*;
 public class Reorder {
 
     public static List<List<Integer>> orders(List<Integer> list) {
-        ArrayList<List<Integer>> result = 
+        List<List<Integer>> result = 
             new ArrayList<List<Integer>>();
         if (list.size() == 1 || list.size() == 2) {
             int toMix = list.get(list.size()-1);
