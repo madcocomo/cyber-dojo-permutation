@@ -7,7 +7,7 @@ public class ReorderTest {
     @Test
     public void testOrders_Empty() {
         List actual = Reorder.orders(new ArrayList<Integer>());
-        List<List<Integer>> expect = new ArrayList<List>();
+        List<List<Integer>> expect = new ArrayList<List<Integer>>();
         expect.add(new ArrayList<Integer>());
         assertEquals(expect, actual);
     }
