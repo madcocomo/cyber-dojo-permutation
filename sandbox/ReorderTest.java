@@ -60,8 +60,8 @@ public class ReorderTest {
 
     @Test
     public void testOrders_big() {
-        List actual = Reorder.orders(Arrays.asList(1,2,3,4,5,6,7,8,9,1));
-        assertEquals(1814400, actual.size());
+        List actual = Reorder.orders(Arrays.asList(1,2,3,4,5,6,7,8,1));
+        assertEquals(181440, actual.size());
     }
 
 
