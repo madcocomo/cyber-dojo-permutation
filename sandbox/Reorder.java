@@ -7,48 +7,54 @@ public class Reorder {
             new ArrayList<List<Integer>>();
         if (list.size() == 1 || list.size() == 2) {
             int toMix = list.get(list.size()-1);
+
             {
                 List<Integer>newList = new ArrayList<Integer>();
-                newList.add(toMix);
+                newList.add(0,toMix);
                 result.add(newList);
             }
         }
+
         if (list.size() == 2) {
+            int toMix = list.get(list.size()-2);
+
             ArrayList<List<Integer>> result1 = 
                 new ArrayList<List<Integer>>();
             {
                 List<Integer> newList = new ArrayList<Integer>(result.get(0));
-                newList.add(0,list.get(0));
+                newList.add(0,toMix);
                 result1.add(newList);
             }
 
             {
                 List<Integer> newList = new ArrayList<Integer>(result.get(0));
-                newList.add(1,list.get(0));
+                newList.add(1,toMix);
                 result1.add(newList);
             }
             result = result1;
         }
         if (list.size() == 3) {
-            ArrayList<List<Integer>> result2 = 
-                new ArrayList<List<Integer>>();
             result.add(Arrays.asList(2,2));
+            int toMix = list.get(list.size()-3);
+
+            ArrayList<List<Integer>> result1 = 
+                new ArrayList<List<Integer>>();
             {
                 List<Integer>newList = new ArrayList<Integer>(result.get(0));
-                newList.add(0,list.get(0));
-                result2.add(newList);
+                newList.add(0,toMix);
+                result1.add(newList);
             }
             {
                 List<Integer>newList = new ArrayList<Integer>(result.get(0));
-                newList.add(1,list.get(0));
-                result2.add(newList);
+                newList.add(1,toMix);
+                result1.add(newList);
             }
             {
                 List<Integer>newList = new ArrayList<Integer>(result.get(0));
-                newList.add(2,list.get(0));
-                result2.add(newList);
+                newList.add(2,toMix);
+                result1.add(newList);
             }
-            result = result2;
+            result = result1;
         }
         return result;
     }
