@@ -28,7 +28,9 @@ public class Reorder {
         {
             List<Integer>newList = new ArrayList<Integer>(list);
             newList.add(i,toMix);
+            if (!result.indexOf(newList)>=0) {
             result.add(newList);
+            }
         }
         return result;        
     }
